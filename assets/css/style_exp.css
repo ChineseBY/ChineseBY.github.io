@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+* body {
+    overflow: hidden;
+    user-select: none;
+}
+
+#exp_head {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+    background: #6db8ff;
+    box-shadow:  20px 20px 60px #5d9cd9,
+             -20px -20px 60px #7dd4ff;
+}
+#exp_head_img {
+    width: 300px;
+    height: 100px;
+}
+.exp_head_img_01 {
+    background-image: url('../img/exp_head_01.png');
+}
+.exp_head_img_02 {
+    background-image: url('../img/exp_head_02.png');
+}
+.exp_head_img_03 {
+    background-image: url('../img/exp_head_03.png');
+}
+.exp_head_img_04 {
+    background-image: url('../img/exp_head_04.png');
+}
+.exp_head_img_05 {
+    background-image: url('../img/exp_head_05.png');
+}
+.bkg {
+        height: 100vh;
+        background-image: url(../img/bkg_exp.png);
+        background-size: cover;
+        overflow: hidden;
+        min-width: 400px;
+}
+.bkg_coal_01 {
+    display: block;
+    background: url(../img/bkg_08.png);
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 0 0 0);
+    transition: clip-path 3s linear;
+    /* z-index: 1; */
+}
+.bkg_coal_02 {
+    display: none;
+    background: url(../img/bkg_08.png);
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 0 0 27%);
+    transition: clip-path 3s linear;
+    /* z-index: 1; */
+}
+.bkg_coal_03 {
+    display: none;
+    background: url(../img/bkg_08.png);
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 0 0 50%);
+    transition: clip-path 3s linear;
+    /* z-index: 1; */
+}
+.bkg_coal_04 {
+    display: none;
+    background: url(../img/bkg_08.png);
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 0 0 90%);
+    transition: clip-path 2s linear;
+    /* z-index: 1; */
+}
+
+.bkg_shaft {
+    background: url(../img/bkg_shaft.png);
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 3.3s linear;
+}
+
+/* 立井掘进动画 */
+#shaft_machine_1 {
+    background-image: url(../img/shaft_machine.png);
+    display: none;
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    top: 240px;
+    left: 103px;
+}
+#shaft_machine_2 {
+    background-image: url(../img/shaft_machine.png);
+    display: none;
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    top: 240px;
+    left: 188px;
+}
+@keyframes shaft_machine_1_anim {
+    90% {
+        opacity: 1;
+        transform: translate(0, 200px);
+    }
+    100% {
+        transform: translate(0, 230px);
+        opacity: 0;
+    }
+}
+@keyframes shaft_machine_2_anim {
+    90% {
+        opacity: 1;
+        transform: translate(0, 200px);
+    }
+    100% {
+        transform: translate(0, 230px);
+        opacity: 0;
+    }
+}
+.shaft_machine_1_anim {
+    animation: shaft_machine_1_anim 2s ease-in-out forwards;
+}
+.shaft_machine_2_anim {
+    animation: shaft_machine_2_anim 2s ease-in-out forwards;
+}
+
+/* 提升罐笼展示 */
+#lifting_cage {
+    background-image: url(../img/lifting_cage.gif);
+    display: none;
+    width: 43px;
+    height: 365px;
+    position: absolute;
+    top: 240px;
+    left: 188px;
+}
+
+/* airtrack展示 */
+#airtrack {
+    background-image: url(../img/airtrack.png);
+    display: none;
+    width: 137px;
+    height: 151px;
+    position: absolute;
+    top: 520px;
+    left: 50px;
+}
+
+/* conveyer展示 */
+#conveyer_01 {
+    background-image: url(../img/conveyer_01.gif);
+    display: none;
+    width: 392px;
+    height: 116px;
+    position: absolute;
+    top: 520px;
+    left: 680px;
+}
+#conveyer_02 {
+    background-image: url(../img/conveyer_02.gif);
+    display: none;
+    width: 392px;
+    height: 147px;
+    position: absolute;
+    top: 558px;
+    left: 300px;
+}
+
+/* 60级展示 */
+#exp_60 {
+    background-image: url(../img/exp_60.png);
+    display: none;
+    width: 396px;
+    height: 228px;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+}
+
+
+/* 挖掘动画01 */
+#shield_support {
+    background-image: url(../img/shield_support.png);
+    display: none;
+    width: 264px;
+    height: 95px;
+    position: absolute;
+    top: 520px;
+    left: -50px;
+}
+@keyframes shield_support_anim_1 {
+    0% {
+        
+    }
+    100% {
+        transform: translate(350px, 0);
+    }
+}
+.shield_support_anim_1 {
+    animation: shield_support_anim_1 4s forwards;
+}
+/* 挖掘动画02 */
+@keyframes shield_support_anim_2 {
+    0% {
+    top: 520px;
+    left: 300px;
+    }
+    100% {
+    top: 520px;
+    left: 650px;
+    }
+}
+.shield_support_anim_2 {
+    animation: shield_support_anim_2 4s forwards;
+}
+/* 挖掘动画03 */
+@keyframes shield_support_anim_3 {
+    0% {
+    top: 520px;
+    left: 650px;
+    }
+    100% {
+    top: 520px;
+    left: 1150px;
+    }
+}
+.shield_support_anim_3 {
+    animation: shield_support_anim_3 4s forwards;
+}
+
+/* 挖掘动画04 */
+@keyframes shield_support_anim_4 {
+    0% {
+    top: 520px;
+    left: 1150px;
+    }
+    100% {
+    top: 520px;
+    left: 1350px;
+    }
+}
+.shield_support_anim_4 {
+    animation: shield_support_anim_4 4s forwards;
+}
+
+
+/* exp_60动画 */
+
+.exp_60_anim {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: exp_60_anim;
+}
+
+@keyframes exp_60_anim {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/popup01.css">
+    <link rel="stylesheet" href="assets/css/plot01.css">
+    <link rel="stylesheet" href="assets/css/popup_main.css">
+    <link rel="stylesheet" href="assets/css/building.css">
+    <link rel="icon" href="assets/img/icon.png" type="image/png">
+    <title>EXP-穿越岩层的守护者：地下采煤安全科普</title>
+</head>
+<body>
+
+    <div id="exp_head">
+      <div id="exp_head_img"></div>
+    </div>
+    
+    <section class="home">
+        <div class="background">
+            <div class="bkg_01"></div>
+            <div class="bkg_02"></div>
+            <div class="bkg_03"></div>
+            <div class="bkg_04"></div>
+            <div class="bkg_05"></div>
+            <div class="bkg_06"></div>
+            <div class="bkg_07"></div>
+            <div class="bkg_08"></div>
+        </div>
+    </section>
+
+    <!-- popup01 -->
+    <div id="popup01">
+        <div class="card_pop01">
+          <div class="border_pop01"></div>
+          <div class="content_pop01">
+            <div class="logo_pop01">
+              <div class="logo1_pop01">
+                <div id="logo-main">
+                  <img src="assets/img/exp.png" alt="">
+                </div>
+              </div>
+              <div class="logo2_pop01">
+                <div id="logo-second">
+                  <img src="assets/img/explore.png" alt="">
+                </div>
+              </div>
+              <span class="trail"></span>
+            </div>
+            <span class="logo-bottom-text">-单击以继续-</span>
+          </div>
+          <span class="bottom-text">Designed by BY</span>
+        </div>
+    </div>
+
+    <div class="plot">
+      <div class="plot_01">
+        <div id="worker_01"><img src="assets/img/worker01.png" alt=""></div>
+        <div id="worker_02"><img src="assets/img/worker02.png" alt=""></div>
+        <div id="worker_03"><img src="assets/img/worker03.png" alt=""></div>
+        <div id="worker_04"><img src="assets/img/worker04.png" alt=""></div>
+      </div>
+      <div class="plot_02">
+        <div id="building"><img src="assets/img/building.png" alt=""></div>
+      </div>
+    </div>
+
+    <!-- 主要弹窗 -->
+    <div class="popup_main">
+      <div class="btn-animate btn-animate__around" id="btn_01">
+        <svg>
+          <rect x="0" y="0" width="100%" height="100%"></rect>
+        </svg>
+        继续
+      </div>
+    </div>
+
+
+    <!-- 确保 JavaScript 代码在 DOM 元素加载完毕后执行 -->
+    <script src="assets/css/gsap.min.js"></script>
+    <script src="assets/css/plot01.js"></script>
+    <script src="assets/css/popup_main.js"></script>
+    <script src="assets/css/popup01.js"></script>
+    <script>
+        gsap.from('.bkg_01', 1.2, {opacity:0, y:150})
+        gsap.from('.bkg_02', 1.2, {opacity:0, y:150, delay:0.1})
+        gsap.from('.bkg_03', 1.2, {opacity:0, y:150, delay:0.3})
+        gsap.from('.bkg_04', 1.2, {opacity:0, y:150, delay:0.6})
+        gsap.from('.bkg_05', 1.2, {opacity:0, y:150, delay:0.8})
+        gsap.from('.bkg_06', 1.2, {opacity:0, y:150, delay:0.9})
+        gsap.from('.bkg_07', 1.2, {opacity:0, y:150, delay:1.2})
+        gsap.from('.bkg_08', 1.2, {opacity:0, y:150, delay:1.4})
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+#building {
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    width: 152px;
+    height: 152px;
+    display: none;
+}
+
+@keyframes building_anim {
+    from {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px);
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0);
+        animation-timing-function: ease-in;
+    }
+
+    to {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        animation-timing-function: ease-in;
+    }
+}
+
+.building_anim {
+    backface-visibility: visible;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: building_anim;
+}

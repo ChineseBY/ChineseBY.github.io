@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_exp.css">
+    <link rel="stylesheet" href="popup_main.css">
+    <link rel="stylesheet" href="popup_main_double.css">
+    <link rel="icon" href="../img/icon.png" type="image/png">
+    <title>EXP-穿越岩层的守护者：地下采煤安全科普</title>
+</head>
+<body>
+    <div id="exp_head">
+      <div id="exp_head_img"></div>
+    </div>
+
+    <div class="bkg">
+        <div class="bkg_coal_01"></div>
+        <div class="bkg_coal_02"></div>
+        <div class="bkg_coal_03"></div>
+        <div class="bkg_coal_04"></div>
+        <div class="bkg_shaft"></div>
+        <div id="shaft_machine_1"></div>
+        <div id="shaft_machine_2"></div>
+        <div id="lifting_cage"></div>
+        <div id="shield_support"></div>
+        <div id="smoke"></div>
+        <div id="airtrack"></div>
+        <div id="conveyer_01"></div>
+        <div id="conveyer_02"></div>
+        <div id="exp_60"></div>
+    </div>
+    
+    <!-- 主要弹窗 -->
+    <div class="popup_main">
+      <div class="btn-animate btn-animate__around" id="btn_01">
+        <svg>
+          <rect x="0" y="0" width="100%" height="100%"></rect>
+        </svg>
+        继续
+      </div>
+      <div class="btn-animate btn-animate__around" id="btn_04">
+        <svg>
+          <rect x="0" y="0" width="100%" height="100%"></rect>
+        </svg>
+        继续
+      </div>
+    </div>
+
+    <!-- 两个选择弹窗 -->
+    <div class="popup_main_double">
+      <div class="btn-animate_double btn-animate__around_double" id="btn_02">
+        <svg>
+          <rect x="0" y="0" width="100%" height="100%"></rect>
+        </svg>
+        否
+      </div>
+      <div class="btn-animate_double btn-animate__around_double" id="btn_03">
+        <svg>
+          <rect x="0" y="0" width="100%" height="100%"></rect>
+        </svg>
+        是
+      </div>
+    </div>
+    <div class="safety_officer">
+      <div class="safety_officer_run"></div>
+    </div>
+    <div class="fire">
+      <div class="fire_anim"></div>
+    </div>
+    <div class="death"></div>
+    <audio id="audio_death" src="../img/death.mp3"></audio>
+    <audio id="audio_exp_60" src="../img/exp_60.mp3"></audio>
+    <audio id="audio_drill" src="../img/drill.mp3"></audio>
+    <!-- 确保 JavaScript 代码在 DOM 元素加载完毕后执行 -->
+     <script src="plot02.js"></script>
+     <script src="popup_main_exp.js"></script>
+    <script src="plot03.js"></script>
+</body>
+</html>

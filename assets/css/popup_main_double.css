@@ -1,0 +1,162 @@
+.popup_main_double {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 670px;
+    height: 430px;
+    /* here */
+    /* padding: 50px; */
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    background-image: url("../img/selector_06.gif");
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+.popupActive_double {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* 双按钮位置 */
+#btn_02 {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+#btn_03 {
+    position: absolute;
+    bottom: 50px;
+    right: 210px;
+}
+
+
+.btn-animate_double {
+    position: absolute;
+    /* bottom: 10px;
+    right: 10px; */
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #027efb;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  .btn-animate__around_double {
+    background: transparent;
+    color: #027efb;
+    position: relative;
+  }
+  .btn-animate__around_double svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-animate__around_double rect {
+    fill: none;
+    stroke: #027efb;
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
+    transition: all .5s linear;
+  }
+  .btn-animate__around_double:hover {
+    font-weight: 600;
+  }
+  .btn-animate__around_double:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 260;
+    stroke-dashoffset: 50%;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+/* 跑路动画 */
+
+
+.safety_officer {
+    display: none;
+    position: absolute;
+    width: 137px;
+    height: 120px;
+    top: 120px;
+    left: 252px;
+    background-image: url('../img/safety_officer.gif');
+}
+/* 2.7s gif */
+.safety_officer_run {
+    animation-duration: 4.0s;
+    animation-fill-mode: both;
+    animation-name: safety_officer_run;
+}
+
+@keyframes safety_officer_run {
+    80% {
+        transform: translate(-20px, 0);
+    }
+
+    to {
+        transform: translate(1500px, 0);
+    }
+}
+
+/* 烟雾 */
+#smoke {
+    display: none;
+    position: absolute;
+    top: 450px;
+    width: 912px;
+    height: 196px;
+    background-image: url('../img/smoke.gif');
+    opacity: 0.7;
+}
+/* 火焰 */
+.fire {
+    display: none;
+    background-image: url('../img/fire.png');
+    position: absolute;
+    top:130px;
+    left: 400px;
+    width: 776px;
+    height: 683px;
+}
+.fire_anim {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-name: fire_anim;
+}
+
+@keyframes fire_anim {
+  0% {
+    transform-origin: 50% 50%;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    transform-origin: 50% 50%;
+    transform: scale(1.5, 1.5);
+  }
+}
+
+/* death */
+
+.death {
+    display: none;
+    position: fixed;
+    /* 逐渐显示有问题？？有空再做 */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/death.png);
+    background-size: cover;
+    overflow: hidden;
+    min-width: 1200px;
+}
